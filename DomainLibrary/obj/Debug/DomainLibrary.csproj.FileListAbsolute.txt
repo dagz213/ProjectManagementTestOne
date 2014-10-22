@@ -1,0 +1,5 @@
+C:\Users\Romaine\Desktop\School Stuff and Others\C#\ProjectManagementTestOne\DomainLibrary\bin\Debug\DomainLibrary.dll
+C:\Users\Romaine\Desktop\School Stuff and Others\C#\ProjectManagementTestOne\DomainLibrary\bin\Debug\DomainLibrary.pdb
+C:\Users\Romaine\Desktop\School Stuff and Others\C#\ProjectManagementTestOne\DomainLibrary\obj\Debug\DomainLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Romaine\Desktop\School Stuff and Others\C#\ProjectManagementTestOne\DomainLibrary\obj\Debug\DomainLibrary.dll
+C:\Users\Romaine\Desktop\School Stuff and Others\C#\ProjectManagementTestOne\DomainLibrary\obj\Debug\DomainLibrary.pdb
