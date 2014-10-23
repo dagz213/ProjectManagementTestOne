@@ -8,5 +8,10 @@ namespace DomainLibrary
 {
     public class Question
     {
+        public int QuestionID { get; set; }
+        public int ChapterID { get; set; }
+        public string QuestionName { get; set; }
+        public char Answer { get; set; }
+        public bool IsAnswered { get; set; }
     }
 }

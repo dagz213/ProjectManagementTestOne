@@ -14,3 +14,5 @@ C:\Users\Romaine\Desktop\School Stuff and Others\C#\ProjectManagementTestOne\Pro
 C:\Users\Romaine\Desktop\School Stuff and Others\C#\ProjectManagementTestOne\ProjectManagementTestOne\bin\Debug\ControllerLibrary.dll
 C:\Users\Romaine\Desktop\School Stuff and Others\C#\ProjectManagementTestOne\ProjectManagementTestOne\bin\Debug\System.Data.SQLite.dll
 C:\Users\Romaine\Desktop\School Stuff and Others\C#\ProjectManagementTestOne\ProjectManagementTestOne\bin\Debug\ControllerLibrary.pdb
+C:\Users\Romaine\Desktop\School Stuff and Others\C#\ProjectManagementTestOne\ProjectManagementTestOne\bin\Debug\DomainLibrary.dll
+C:\Users\Romaine\Desktop\School Stuff and Others\C#\ProjectManagementTestOne\ProjectManagementTestOne\bin\Debug\DomainLibrary.pdb

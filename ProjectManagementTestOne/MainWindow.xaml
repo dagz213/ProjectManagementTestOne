@@ -2,7 +2,18 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+    <Grid x:Name="mainGrid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="258*"/>
+            <ColumnDefinition Width="259*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="57*"/>
+            <RowDefinition Height="206*"/>
+            <RowDefinition Height="57*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="238" Height="37" Click="submitClick"/>
+        <Grid x:Name="choicesGrid" HorizontalAlignment="Left" Height="186" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="497" Grid.ColumnSpan="2"/>
+
     </Grid>
 </Window>

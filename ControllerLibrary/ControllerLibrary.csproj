@@ -45,12 +45,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnswersController.cs" />
     <Compile Include="DBHandler.cs" />
+    <Compile Include="interfaces\IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ChapterController.cs" />
+    <Compile Include="QuestionController.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="interfaces\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\DomainLibrary\DomainLibrary.csproj">
       <Project>{fb583c36-94fe-48c0-9275-c26026c2a1b2}</Project>

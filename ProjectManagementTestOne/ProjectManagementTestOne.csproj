@@ -138,6 +138,10 @@
       <Project>{0f5929d9-e5da-4da8-b31f-1e3856e3120a}</Project>
       <Name>ControllerLibrary</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DomainLibrary\DomainLibrary.csproj">
+      <Project>{fb583c36-94fe-48c0-9275-c26026c2a1b2}</Project>
+      <Name>DomainLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

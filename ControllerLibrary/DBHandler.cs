@@ -10,10 +10,10 @@ namespace ControllerLibrary
 {
     public class DBHandler
     {
-        private const string DBNAME = "QuestionBank.sqlite";
-        private const string QUESTIONS = "questions";
-        private const string CHAPTER = "chapter";
-        private const string ANSWERS = "answers";
+        public const string DBNAME = "QuestionBank.sqlite";
+        public const string QUESTIONS = "questions";
+        public const string CHAPTER = "chapter";
+        public const string ANSWERS = "answers";
 
         protected SQLiteConnection connection;
         protected SQLiteCommand command;
@@ -101,6 +101,7 @@ namespace ControllerLibrary
                     "answertwo TEXT," +
                     "answerthree TEXT," +
                     "answerfour TEXT," +
+                    "answerfive TEXT," +
                     "FOREIGN KEY (questionID) REFERENCES " + QUESTIONS + "(questionID)"
                      + ");";
                 // Let the SQLiteCommand object know our SQL-Query:
@@ -155,6 +156,27 @@ namespace ControllerLibrary
                 throw new SQLiteException(ex.Message);
             }
             return false;    
+        }
+
+        public bool CheckIfPopulated(string tableName) 
+        {
+            connection.Open();
+            string query1 = "SELECT * FROM " + tableName + ";";
+
+            SQLiteCommand sqlCommand = new SQLiteCommand(query1, connection);
+            try
+            {
+                int rows = Convert.ToInt32(sqlCommand.ExecuteScalar(CommandBehavior.CloseConnection));
+                if (rows > 0)
+                {
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            return false;
         }
     }
 }
