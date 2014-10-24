@@ -10,7 +10,7 @@ using ControllerLibrary.interfaces;
 
 namespace ControllerLibrary
 {
-    public class AnswersController : DBHandler, IRepository<Answer, int>
+    public class AnswersController : DBHandler, IAnswerRepository
     {
         public AnswersController()
         {
@@ -213,6 +213,30 @@ namespace ControllerLibrary
         public List<Answer> getAllItems()
         {
             throw new NotImplementedException();
+        }
+
+        public Answer getAnswerByQuestionID(int questionID)
+        {
+            var answer = new Answer();
+            command = new SQLiteCommand("SELECT * FROM " + ANSWERS + " WHERE questionID = @questionID", connection);
+            command.Parameters.Add("@questionID", DbType.Int32).Value = questionID;
+            connection.Open();
+            using (var reader = command.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    answer.AnswerID = Convert.ToInt32(reader["answerID"]);
+                    answer.QuestionID = Convert.ToInt32(reader["questionID"]);
+                    answer.AnswerOne = reader["answerone"].ToString();
+                    answer.AnswerTwo = reader["answertwo"].ToString();
+                    answer.AnswerThree = reader["answerthree"].ToString();
+                    answer.AnswerFour = reader["answerfour"].ToString();
+                    if (!String.IsNullOrEmpty(reader["answerfive"].ToString()))
+                        answer.AnswerFive = reader["answerfive"].ToString();
+                }
+            }
+            connection.Close();
+            return answer;
         }
     }
 }

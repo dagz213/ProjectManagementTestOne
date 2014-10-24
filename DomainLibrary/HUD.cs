@@ -10,5 +10,7 @@ namespace DomainLibrary
     {
         public static int score = 0;
         public static int value;
+        public static Question question;
+        public static int number = 1;
     }
 }

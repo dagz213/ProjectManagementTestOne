@@ -16,3 +16,7 @@ C:\Users\Romaine\Desktop\School Stuff and Others\C#\ProjectManagementTestOne\Pro
 C:\Users\Romaine\Desktop\School Stuff and Others\C#\ProjectManagementTestOne\ProjectManagementTestOne\bin\Debug\ControllerLibrary.pdb
 C:\Users\Romaine\Desktop\School Stuff and Others\C#\ProjectManagementTestOne\ProjectManagementTestOne\bin\Debug\DomainLibrary.dll
 C:\Users\Romaine\Desktop\School Stuff and Others\C#\ProjectManagementTestOne\ProjectManagementTestOne\bin\Debug\DomainLibrary.pdb
+C:\Users\Romaine\Desktop\School Stuff and Others\C#\ProjectManagementTestOne\ProjectManagementTestOne\bin\Debug\ProjectManagementTestOne.exe.manifest
+C:\Users\Romaine\Desktop\School Stuff and Others\C#\ProjectManagementTestOne\ProjectManagementTestOne\bin\Debug\ProjectManagementTestOne.application
+C:\Users\Romaine\Desktop\School Stuff and Others\C#\ProjectManagementTestOne\ProjectManagementTestOne\obj\Debug\ProjectManagementTestOne.exe.manifest
+C:\Users\Romaine\Desktop\School Stuff and Others\C#\ProjectManagementTestOne\ProjectManagementTestOne\obj\Debug\ProjectManagementTestOne.application

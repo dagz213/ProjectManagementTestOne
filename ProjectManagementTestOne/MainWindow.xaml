@@ -8,12 +8,20 @@
             <ColumnDefinition Width="259*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="57*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="54*"/>
             <RowDefinition Height="206*"/>
             <RowDefinition Height="57*"/>
         </Grid.RowDefinitions>
-        <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="238" Height="37" Click="submitClick"/>
-        <Grid x:Name="choicesGrid" HorizontalAlignment="Left" Height="186" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="497" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="238" Height="37" Click="submitClick"/>
+        <Grid x:Name="choicesGrid" HorizontalAlignment="Left" Height="186" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="497" Grid.ColumnSpan="2">
+            <RadioButton x:Name="radioTwo" HorizontalAlignment="Left" Margin="0,38,0,0" VerticalAlignment="Top"/>
+            <RadioButton x:Name="radioFour" HorizontalAlignment="Left" Margin="0,115,0,0" VerticalAlignment="Top"/>
+            <RadioButton x:Name="radioThree" HorizontalAlignment="Left" Margin="0,78,0,0" VerticalAlignment="Top"/>
+            <RadioButton x:Name="radioFive" HorizontalAlignment="Left" Margin="0,150,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+            <RadioButton x:Name="radioOne" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top"/>
+        </Grid>
+        <Button x:Name="btnTryAgain" Content="Try Again" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="239" Height="40" IsEnabled="False" Click="tryagain"/>
 
     </Grid>
 </Window>
